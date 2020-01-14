@@ -4,6 +4,7 @@ from bokeh.io import output_file, show, curdoc
 from bokeh.layouts import gridplot, column, row
 from bokeh.plotting import figure
 from bokeh.models import ColumnDataSource, Slider, TextInput
+from bokeh.models.widgets import Div
 from bokeh.resources import CDN
 from bokeh.embed import file_html
 
@@ -48,7 +49,12 @@ def update_data(attrname, old, new):
 for w in [mass, extention, imbalance]:
     w.on_change('value', update_data)
 
+# Div model with background theory
+div = Div(text="""<b><h>I'll put some text here</b></h>""", width=550, height=110)
+
+
+
 # Set up layouts and add to document
 layout = column(mass, extention, imbalance)
-curdoc().add_root(row(layout, fig, width=800))
+curdoc().add_root(row(column(div,layout), fig, width=800))
 curdoc().title = "Polimerizator 1.1"
