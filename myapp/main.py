@@ -7,6 +7,9 @@ from bokeh.models import ColumnDataSource, Slider, TextInput
 from bokeh.resources import CDN
 from bokeh.embed import file_html
 
+
+
+
 # Data
 N = 200
 Mo_max = 1000
