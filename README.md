@@ -15,4 +15,4 @@ Download this repository then execute:
 # Running online
 
 You can access the app at :
-> polycondensation.herokuapp.com/
+[Polycondensation](http://polycondensation.herokuapp.com/myapp)
