@@ -1,6 +1,6 @@
 pandas==0.24.2
 numpy==1.16.4
-PyYAML==5.1.1
+PyYAML==5.4
 MarkupSafe==1.0
 requests==2.22.0
 tornado==6.0.3
